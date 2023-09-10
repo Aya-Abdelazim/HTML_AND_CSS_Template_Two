@@ -104,6 +104,19 @@ ul {
   max-width: 100%;
 }
 
+input::placeholder,
+.main-input::placeholder {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+input:focus::placeholder,
+.main-input:focus::placeholder {
+  opacity: 0;
+}
 /* End Components */
 
 /* Start Header */
@@ -1012,6 +1025,7 @@ header nav .form i {
   background-color: var(--main-color);
   text-transform: uppercase;
   color: white;
+  cursor: pointer;
 }
 
 .subscribe form input[type=email]:focus,
